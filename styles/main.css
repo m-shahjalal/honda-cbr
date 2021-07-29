@@ -1,0 +1,147 @@
+/* import fonts and frameworks */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap');
+@import './bootstrap.min.css';
+
+/* base variables */
+:root {
+	--primary: #e76f51;
+	--secondary: #23a6f0;
+	--dark: #264653;
+}
+.html,
+body {
+	font-family: Poppins, sans-serif;
+}
+
+/* utilities classes */
+.custom-lead {
+	font-weight: 600;
+	margin-bottom: 18px;
+}
+.grayscale {
+	filter: grayscale(100%);
+}
+.font-600 {
+	font-weight: 600;
+}
+.card-text {
+	color: #6c6c6c;
+}
+.fa-star {
+	color: var(--primary);
+}
+
+/* navigation */
+.navbar {
+	background: #264653;
+}
+.custom-nav {
+	margin-right: 100px;
+}
+.custom-nav-btn:focus {
+	box-shadow: none !important;
+}
+.login {
+	background: var(--primary);
+}
+
+/* hero section */
+#hero {
+	background-color: var(--dark);
+	min-height: 100vh;
+}
+.custom-hero-container {
+	min-height: 100vh;
+}
+.custom-hero-top {
+	font-size: 14px;
+}
+
+.custom-hero-btn {
+	margin-top: 18px;
+	background-color: var(--primary);
+}
+
+/* feature section */
+#featured {
+	margin-top: 64px;
+}
+.custom-feature-tag {
+	font-size: 14px;
+	color: var(--primary);
+	position: relative;
+	/* margin-bottom: 90px; */
+}
+.custom-feature-tag::after {
+	content: '';
+	width: 50px;
+	height: 1px;
+	background: var(--primary);
+	display: inline-block;
+	position: relative;
+	top: 7px;
+	left: -90px;
+}
+
+/* news */
+#news {
+	margin-top: 160px;
+}
+.custom-card-btn {
+	background-color: var(--primary);
+}
+
+/* review */
+#review {
+	margin-top: 160px;
+}
+.review-color {
+	color: var(--primary);
+}
+.custom-card-name {
+	color: var(--secondary);
+}
+.custom-card-dec {
+	color: #252b42;
+}
+.custom-review-image {
+	min-width: 150px;
+	min-height: 150px;
+	max-width: 250px;
+	max-height: 250px;
+	margin: 40px auto 30px auto;
+	padding: 5px;
+}
+
+/* faq */
+.custom-accordion-item {
+	margin: 13px 0;
+	border: 1px solid #d5e5fb !important;
+	border-radius: 5px !important;
+}
+.custom-accordion-item button,
+.custom-accordion-item button:focus {
+	box-shadow: none;
+	border-radius: 8px !important;
+	background: inherit;
+	color: inherit;
+}
+.custom-accordion-body {
+	color: #7e848c;
+}
+.accordion-button:not(.collapsed) {
+	background: transparent !important;
+	color: inherit;
+}
+.custom-image {
+	border-radius: 10px;
+
+	box-shadow: 0 0 70px 0px #e76f5140;
+}
+
+/* events */
+
+.custom-events {
+	background: var(--dark);
+}
+/* footer */
